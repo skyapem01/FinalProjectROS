@@ -4,17 +4,14 @@ import rospy
 
 def server_callback(req):
     print("Doing something..")
-    rospy.loginfo("Going to home")
-    rospy.sleep(2.)
-    rospy.loginfo("Arrived.")
-    
     return EmptyResponse()
 
 def trigger_server():
     rospy.init_node('trigger_server')
-    s = rospy.Service('/go_home', Empty, server_callback)
+    s = rospy.Service('trigger', Empty, server_callback)
     print("Ready to do something.")
     rospy.spin()
 
 if __name__ == "__main__":
     trigger_server()
+
