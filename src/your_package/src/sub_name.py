@@ -7,7 +7,7 @@ def callback1(data):
     
 
 def listener():
-    rospy.init_node('listener', anonymous=True)
+    rospy.init_node('listener2', anonymous=True)
     rospy.Subscriber("fullname", String, callback1)
     rospy.spin()
 

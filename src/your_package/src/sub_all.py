@@ -9,7 +9,7 @@ def callback2(data):
     rospy.loginfo(rospy.get_caller_id() + " - studentID : %s  (2)", data.data)
 
 def listener():
-    rospy.init_node('listener', anonymous=True)
+    rospy.init_node('listener1', anonymous=True)
     rospy.Subscriber("fullname", String, callback1)
     rospy.Subscriber("Student_ID", String, callback2)
     rospy.spin()
