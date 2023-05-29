@@ -1,0 +1,2 @@
+your_package
+-DCATKIN_DEVEL_PREFIX=/home/worawibun/Final_project_ROS/devel -DCMAKE_INSTALL_PREFIX=/home/worawibun/Final_project_ROS/install -G Unix Makefiles
