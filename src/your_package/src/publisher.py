@@ -6,7 +6,7 @@ def talker1():
     rospy.init_node('talker1', anonymous=True)
     rate = rospy.Rate(10) # 10hz
     while not rospy.is_shutdown():
-        fullname = "Myname : Worawibun Tiyatha"
+        fullname = "Worawibun Tiyatha"
         rospy.loginfo(fullname)
         pub.publish(fullname)
         rate.sleep()
